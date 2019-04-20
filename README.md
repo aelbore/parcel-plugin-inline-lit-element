@@ -9,6 +9,12 @@ Getting Started
   npm run bundle
   npm run symlink
   ```
+ 
+Installation
+------------
+  ```
+  npm install --save-dev parcel-plugin-inline-lit-element
+  ```
 
 ## Start the examples
   * Typescript
