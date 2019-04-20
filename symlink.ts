@@ -13,7 +13,7 @@ const updatePkgFile = async () => {
     await Promise.resolve()
   } else {
     pkg.devDependencies[PKG] = '0.0.0'
-    await writeFile('./package.json', JSON.stringify(pkg, '\t', 2))
+    await writeFile('./package.json', JSON.stringify(pkg, null, 2))
   }
 }
 

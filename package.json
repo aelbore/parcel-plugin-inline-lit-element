@@ -1,18 +1,28 @@
 {
   "name": "parcel-plugin-inline-lit-element",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Parcel Plugin for LitElement to inline your import css and scss file",
   "main": "index.js",
   "scripts": {
-    "bundle": "ts-node tools/build.ts",
-    "start": "parcel index.html",
-    "symlink": "node index.js"
+    "bundle": "ts-node --project tools/tsconfig.json tools/build.ts",
+    "clean.dist": "ts-node --project tools/tsconfig.json tools/clean.dist.ts",
+    "start.ts": "npm run clean.dist && parcel examples/ts/index.html",
+    "start.js": "npm run clean.dist && parcel examples/js/index.html",
+    "symlink": "ts-node symlink.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aelbore/parcel-plugin-inline-lit-element.git"
   },
-  "keywords": [],
+  "keywords": [
+    "parcel",
+    "plugin",
+    "inline-styles",
+    "css",
+    "scss",
+    "lit-html",
+    "lit-element"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {

@@ -19,7 +19,7 @@ class HelloWorld extends LitElement {
 
   render() {
     // @ts-ignore
-    return html `<h1>Hello ${this.message}</h1>`
+    return html `<h1>Hello ${this.message}, Javascript!</h1>`
   }
 
 }

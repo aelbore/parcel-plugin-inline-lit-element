@@ -11,20 +11,12 @@ Getting Started
   ```
 
 ## Start the examples
-  ```
-  npm start
-  ```
-
-## TODO
-  * Support .js files
-    * rename the following files 
-      ```
-      hello-world.ts => hello-world.js
-      index.ts => index.js
-      ```
-    * update the script url
-      ```html
-      <script src="examples/index.ts"></script>
-      to 
-      <script src="examples/index.js"></script>
-      ```
+  * Typescript
+    ```
+    npm run start.ts
+    ```
+  * Javascript
+    ```
+    npm run start.js
+    ```
+  

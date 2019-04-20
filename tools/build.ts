@@ -76,7 +76,8 @@ const generateRollupConfig = (input, output) => {
 
 const files = [
   { input: 'src/index.ts', output: `${DEST_PATH}/index.js` },
-  { input: 'src/inline-plugin.ts', output: `${DEST_PATH}/inline-plugin.js` }
+  { input: 'src/ts-assets.ts', output: `${DEST_PATH}/ts-assets.js` },
+  { input: 'src/js-assets.ts', output: `${DEST_PATH}/js-assets.js` }
 ]
 
 clean(DEST_PATH)
