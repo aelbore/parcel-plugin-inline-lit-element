@@ -8,7 +8,7 @@ const writeFile = util.promisify(fs.writeFile)
 const PKG = 'parcel-plugin-inline-lit-element'
 
 const updatePkgFile = async () => {
-  const pkg = require('./package.json')
+  const pkg = require('../package.json')
   if (pkg.devDependencies && pkg.devDependencies[PKG]) {
     await Promise.resolve()
   } else {

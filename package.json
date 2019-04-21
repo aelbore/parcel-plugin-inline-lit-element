@@ -8,7 +8,7 @@
     "clean.dist": "ts-node --project tools/tsconfig.json tools/clean.dist.ts",
     "start.ts": "npm run clean.dist && parcel examples/ts/index.html",
     "start.js": "npm run clean.dist && parcel examples/js/index.html",
-    "symlink": "ts-node symlink.ts"
+    "symlink": "ts-node --project tools/tsconfig.json tools/symlink.ts"
   },
   "repository": {
     "type": "git",
