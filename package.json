@@ -4,11 +4,13 @@
   "description": "Parcel Plugin for LitElement to inline your import css and scss file",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run bundle && npm run link.plugin",
+    "link.plugin": "ts-node --project tools/tsconfig.json tools/link-plugin.ts",
+    "link.transpiler": "ts-node --project tools/tsconfig.json tools/link-transpiler.ts && npm run build --prefix transpiler",
     "bundle": "ts-node --project tools/tsconfig.json tools/build.ts",
     "clean.dist": "ts-node --project tools/tsconfig.json tools/clean.dist.ts",
     "start.ts": "npm run clean.dist && parcel examples/ts/index.html",
-    "start.js": "npm run clean.dist && parcel examples/js/index.html",
-    "symlink": "ts-node --project tools/tsconfig.json tools/symlink.ts"
+    "start.js": "npm run clean.dist && parcel examples/js/index.html"
   },
   "repository": {
     "type": "git",
@@ -29,10 +31,6 @@
     "url": "https://github.com/aelbore/parcel-plugin-inline-lit-element/issues"
   },
   "homepage": "https://github.com/aelbore/parcel-plugin-inline-lit-element#readme",
-  "peerDependencies": {
-    "parcel-bundler": "^1.12.3",
-    "typescript": "^3.4.4"
-  },
   "dependencies": {
     "lit-element-transpiler": "0.0.1"
   },
@@ -42,7 +40,8 @@
     "@types/parcel-bundler": "^1.12.0",
     "aria-tools": "0.0.4",
     "lit-element": "^2.1.0",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-inline-lit-element": "0.0.0"
   },
   "browserslist": [
     "last 1 chrome versions"

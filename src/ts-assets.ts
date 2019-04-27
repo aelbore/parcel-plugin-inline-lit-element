@@ -1,4 +1,4 @@
-import { transpiler } from './transpiler'
+import { transpiler } from 'lit-element-transpiler'
 const { Asset } = require('parcel-bundler')
 
 class InlineLitElement extends Asset {

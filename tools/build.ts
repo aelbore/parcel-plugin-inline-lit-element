@@ -11,7 +11,7 @@ const copyFile = util.promisify(fs.copyFile)
 const typescript2 = require('rollup-plugin-typescript2');
 const resolve = require('rollup-plugin-node-resolve')
 
-const DEST_PATH = 'parcel-plugin-inline-lit-element'
+const DEST_PATH = 'bundle'
 
 function rollupBuild({ inputOptions, outputOptions }) {
   return rollup(inputOptions).then(bundle => bundle.write(outputOptions));

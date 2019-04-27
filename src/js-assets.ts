@@ -1,4 +1,4 @@
-import { transpiler } from './transpiler'
+import { transpiler } from 'lit-element-transpiler'
 const JSAsset = require('parcel-bundler/src/assets/JSAsset')
 
 class JSAssetInline extends JSAsset {

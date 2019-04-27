@@ -19,8 +19,8 @@ const updatePkgFile = async () => {
 
 Promise.all([
   symlinkDir(
-    path.resolve(PKG),
-    path.resolve(`node_modules/${PKG}`)
+    path.resolve('bundle'),
+    path.resolve(`node_modules/parcel-plugin-inline-lit-element`)
   ),
   updatePkgFile()
 ])
