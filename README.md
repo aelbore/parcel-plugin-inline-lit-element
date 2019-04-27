@@ -6,8 +6,6 @@ Getting Started
   ```
   git clone https://github.com/aelbore/parcel-plugin-inline-lit-element.git
   npm install
-  npm run bundle
-  npm run symlink
   ```
  
 Installation
@@ -17,12 +15,39 @@ Installation
   ```
 
 ## Start the examples
-  * Typescript
+* Typescript with Decorators
+  * Counter 
     ```
-    npm run start.ts
+    npm run build.counter.decorators
     ```
-  * Javascript
+  * Hello World
     ```
-    npm run start.js
+    npm run build.hello.world.decorators
     ```
+
+* Javascript
+  * Counter
+    ```
+    npm run build.counter
+    ```
+  * Hello World
+    ```
+    npm run build.hello.world
+    ```
+* Run the application
+  ```
+  npm run serve
+  ```
+* Go your browser
+  ```
+  http://localhost:1234
+  ```
   
+
+## Use Lit-Element-Transpiler
+  ```
+  git submodule init
+  git submodule update --remote
+
+  npm run link.transpiler
+  ```

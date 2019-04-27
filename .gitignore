@@ -4,3 +4,4 @@ dist
 .cache
 parcel-plugin-inline-lit-element
 bundle
+transpiler

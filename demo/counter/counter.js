@@ -3,15 +3,13 @@ import './counter.scss'
 
 class Counter extends LitElement {
 
-  count: number = 0;
-
   static get properties() {
     return {
       count: { type: Number }
     }
   }
 
-  incrementCount(e: CustomEvent) {
+  incrementCount(e) {
     this.count = this.count + 1
   }
 
