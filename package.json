@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-inline-lit-element",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parcel Plugin for LitElement to inline your import css and scss file",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/aelbore/parcel-plugin-inline-lit-element#readme",
   "dependencies": {
-    "lit-element-transpiler": "0.0.1"
+    "lit-element-transpiler": "^0.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
