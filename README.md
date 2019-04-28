@@ -34,10 +34,6 @@ Installation
     ```
     npm run build.hello.world
     ```
-* Run the application
-  ```
-  npm run serve
-  ```
 * Go your browser
   ```
   http://localhost:1234
